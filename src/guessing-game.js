@@ -17,12 +17,17 @@ class GuessingGame {
     }
 
     lower() {
-
+        if(this.guess() > number) {
+            this.max = this.guess()
+        }
     }
 
     greater() {
-
+        if(this.guess() < number) {
+            this.min = this.guess()
+        }
     }
 }
 
+console.log(GuessingGame.number);
 module.exports = GuessingGame;
